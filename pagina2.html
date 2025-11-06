@@ -4,215 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DataBase Solutions - Nuestro Equipo</title>
-    <style>
-        /* ======== ESTILO GENERAL ======== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* ======== CABECERA ======== */
-        header {
-            background: linear-gradient(135deg, #0078d7, #005a9e);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            animation: tituloAnimacion 2s ease-in-out;
-        }
-
-        header p {
-            opacity: 0.9;
-            font-size: 1.1rem;
-        }
-
-        /* ======== CONTENIDO ======== */
-        main {
-            margin-top: 40px;
-        }
-
-        .equipo {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .miembro {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s;
-            animation: aparecer 1.5s ease forwards;
-        }
-
-        .miembro:hover {
-            transform: translateY(-5px);
-        }
-
-        .miembro img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-
-        .miembro h3 {
-            color: #0078d7;
-            margin-bottom: 10px;
-        }
-
-        .miembro p {
-            font-size: 0.95rem;
-        }
-
-        /* ======== FORMATO HTML BÁSICO ======== */
-        .info {
-            background: #fff;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .info p {
-            margin-bottom: 15px;
-        }
-
-        .info ul {
-            margin-left: 20px;
-        }
-
-        /* ======== BOTONES ======== */
-        .botones {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #0078d7;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 10px;
-            transition: all 0.3s;
-        }
-
-        .btn:hover {
-            background: #005a9e;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-
-        /* ======== PIE DE PÁGINA ======== */
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
-
-        /* ======== ANIMACIONES ======== */
-        @keyframes tituloAnimacion {
-            0% {opacity: 0; transform: translateY(-30px);}
-            60% {opacity: 1; transform: translateY(5px);}
-            100% {transform: translateY(0);}
-        }
-
-        @keyframes aparecer {
-            from {opacity: 0; transform: translateY(20px);}
-            to {opacity: 1; transform: translateY(0);}
-        }
-
-        /* ======== RESPONSIVE ======== */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            .btn {
-                display: block;
-                margin: 10px auto;
-                width: 200px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- ======== CABECERA ======== -->
+    <!-- Encabezado -->
     <header>
         <div class="container">
             <h1>Nuestro Equipo</h1>
-            <p>Conocé a los profesionales detrás de DataBase Solutions</p>
+            <p>Profesionales especializados en bases de datos</p>
         </div>
     </header>
 
-    <!-- ======== CONTENIDO ======== -->
+    <!-- Contenido principal -->
     <main class="container">
-        <section class="info">
-            <h2><u>Sobre Nosotros</u></h2>
-            <p>En <b>DataBase Solutions</b> contamos con un equipo <i>altamente capacitado</i> para ofrecerte las mejores soluciones en gestión y optimización de bases de datos.</p>
-            <p>Nuestros valores fundamentales son:</p>
-            <ul>
-                <li><b>Compromiso</b> con cada cliente.</li>
-                <li><b>Innovación</b> constante en tecnología.</li>
-                <li><b>Confianza</b> y <u>seguridad</u> en cada proyecto.</li>
-            </ul>
-        </section>
-
         <section class="equipo">
             <div class="miembro">
-                <img src="https://i.imgur.com/3GvwNBf.png" alt="Director de Proyecto">
-                <h3>Francisco Lombardo</h3>
-                <p><i>Director de Proyecto</i></p>
+                <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Daysi Britos - Especialista en MySQL">
+                <h3>Daysi Britos</h3>
+                <p><strong>Especialista en MySQL</strong></p>
+                <p>5 años de experiencia en administración y optimización de bases de datos MySQL.</p>
             </div>
+
             <div class="miembro">
-                <img src="https://i.imgur.com/6P0Y0lR.png" alt="Especialista en Bases de Datos">
-                <h3>María González</h3>
-                <p><i>Especialista en Bases de Datos</i></p>
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Iván Acosta - Experto en MongoDB">
+                <h3>Iván Acosta</h3>
+                <p><strong>Experto en MongoDB</strong></p>
+                <p>Especialista en bases de datos NoSQL y arquitecturas distribuidas.</p>
             </div>
+
             <div class="miembro">
-                <img src="https://i.imgur.com/h45X4fQ.png" alt="Analista de Seguridad">
-                <h3>José Ramírez</h3>
-                <p><i>Analista de Seguridad</i></p>
-            </div>
-            <div class="miembro">
-                <img src="https://i.imgur.com/tDA6W9S.png" alt="Desarrolladora Backend">
-                <h3>Laura Benítez</h3>
-                <p><i>Desarrolladora Backend</i></p>
+                <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sofía Ayala - Arquitecta de Datos">
+                <h3>Sofía Ayala</h3>
+                <p><strong>Arquitecta de Datos</strong></p>
+                <p>Diseña soluciones escalables de bases de datos para empresas grandes.</p>
             </div>
         </section>
 
+        <!-- Enlaces -->
         <div class="botones">
             <a href="index.html" class="btn">Página Principal</a>
-            <a href="pagina1.html" class="btn">Servicios</a>
+            <a href="pagina1.html" class="btn">Nuestros Servicios</a>
         </div>
     </main>
 
-    <!-- ======== PIE DE PÁGINA ======== -->
+    <!-- Pie de página -->
     <footer>
         <div class="container">
             <p>&copy; 2025 DataBase Solutions. Todos los derechos reservados. | Desarrollado por <strong>Francisco Lombardo</strong></p>
