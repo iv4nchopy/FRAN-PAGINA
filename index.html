@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataBase Solutions - Inicio</title>
+    <style>
+        /* ======== ESTILO GENERAL ======== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ======== CABECERA ======== */
+        header {
+            background: linear-gradient(135deg, #0078d7, #005a9e);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            animation: tituloAnimacion 2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* ======== CONTENIDO PRINCIPAL ======== */
+        main {
+            padding: 40px 0;
+        }
+
+        .descripcion {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .descripcion h2 {
+            color: #0078d7;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            animation: tituloAnimacion 2s ease-in-out;
+        }
+
+        .paginas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .pagina-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: aparecer 1.5s ease forwards;
+        }
+
+        .pagina-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .pagina-card h3 {
+            color: #0078d7;
+            margin-bottom: 15px;
+            animation: tituloAnimacion 2s ease-in-out;
+        }
+
+        .pagina-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* ======== BOTONES ======== */
+        .btn {
+            display: inline-block;
+            background: #0078d7;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #005a9e;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* ======== PIE DE PÁGINA ======== */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* ======== ANIMACIONES ======== */
+        @keyframes tituloAnimacion {
+            0% {opacity: 0; transform: translateY(-30px);}
+            60% {opacity: 1; transform: translateY(5px);}
+            100% {transform: translateY(0);}
+        }
+
+        @keyframes aparecer {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        /* ======== RESPONSIVE ======== */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .paginas {
+                grid-template-columns: 1fr;
+            }
+
+            .btn {
+                display: block;
+                margin: 15px auto;
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ======== CABECERA ======== -->
+    <header>
+        <div class="container">
+            <h1>DataBase Solutions</h1>
+            <p>Expertos en gestión y administración de bases de datos</p>
+        </div>
+    </header>
+
+    <!-- ======== CONTENIDO PRINCIPAL ======== -->
+    <main class="container">
+        <div class="descripcion">
+            <h2>Bienvenido a Nuestra Plataforma</h2>
+            <p>Somos especialistas en soluciones de base de datos para empresas de todos los tamaños.</p>
+        </div>
+
+        <div class="paginas">
+            <div class="pagina-card">
+                <h3>Nuestros Servicios</h3>
+                <p>Consulta nuestra amplia gama de servicios especializados en bases de datos, con precios competitivos en guaraníes.</p>
+                <a href="pagina1.html" class="btn">Ver Servicios</a>
+            </div>
+            
+            <div class="pagina-card">
+                <h3>Nuestro Equipo</h3>
+                <p>Conoce a nuestro equipo de expertos en bases de datos, profesionales altamente capacitados.</p>
+                <a href="pagina2.html" class="btn">Conocer Equipo</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- ======== PIE DE PÁGINA ======== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 DataBase Solutions. Todos los derechos reservados. | Desarrollado por <strong>Francisco Lombardo</strong></p>
+        </div>
+    </footer>
+</body>
+</html>
